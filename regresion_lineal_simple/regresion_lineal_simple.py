@@ -18,7 +18,9 @@ var_dependiente = dataset.iloc[:,1].values
 
 #Dividir el dataset en conjunto entrenamiento y testing
 from sklearn.model_selection import train_test_split
-var_in_train,var_in_test,var_depen_train,var_depen_test = train_test_split(var_independientes,var_dependiente,test_size = 1/2,random_state = 0)
+var_in_train,var_in_test,var_depen_train,var_depen_test = train_test_split(
+    var_independientes,var_dependiente,test_size = 1/3,random_state = 0
+    )
 
 
 #escalado de variables 
